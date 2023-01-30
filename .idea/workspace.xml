@@ -4,47 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed57ccf0-5ab5-42f9-a1e5-69e4b9c0e0a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jpa/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/dao/AppUserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/enums/UserState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-rabitmq/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-rabitmq/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-rabitmq/src/main/java/org/example/model/RabbitQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/DispatcherApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/configuration/RabbitConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/TelegramBot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/UpdateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/service/impl/AnswerConsumerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/utils/MessageUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/NodeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/configuration/RabbitConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/dao/RawDataDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/entity/RawData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/ConsumerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/MainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/ProducerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/enums/ServiceCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/ConsumerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/MainServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/ProducerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="ed57ccf0-5ab5-42f9-a1e5-69e4b9c0e0a4" name="Changes" comment="Сделал всё до десятого урока">
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/dao/AppDocumentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/dao/AppPhotoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/dao/BinaryContentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/BinaryContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/enums/AppPhoto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/exception/UploadFileException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/AppDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/AppDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/MainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/MainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,39 +61,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-11",
-    "last_directory_selection": "D:/JAVA/BabushkinPogreb/dispatcher/src/main/java/org/example",
-    "last_opened_file_path": "C:/Users/Phoenix/Desktop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "spring.configuration.checksum": "e9c25cfd7c981981ad416dd4fb1f9d22",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-11&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/JAVA/BabushkinPogreb/dispatcher/src/main/java/org/example&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Phoenix/Desktop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e9c25cfd7c981981ad416dd4fb1f9d22&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JAVA\BabushkinPogreb\node\src\main\java\org\example" />
@@ -137,7 +110,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DispatcherApplication">
+  <component name="RunManager" selected="Spring Boot.NodeApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="BabushkinPogreb" />
       <method v="2">
@@ -179,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DispatcherApplication" />
         <item itemvalue="Spring Boot.NodeApplication" />
+        <item itemvalue="Spring Boot.DispatcherApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -214,12 +187,37 @@
       <workItem from="1673311035593" duration="98000" />
       <workItem from="1673689656790" duration="1382000" />
       <workItem from="1674348840062" duration="2320000" />
-      <workItem from="1674351865282" duration="5298000" />
+      <workItem from="1674351865282" duration="16182000" />
+      <workItem from="1674696310475" duration="530000" />
+      <workItem from="1675047024953" duration="4407000" />
     </task>
+    <task id="LOCAL-00001" summary="Сделал всё до десятого урока">
+      <created>1674371447355</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674371447355</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Сделал всё до десятого урока" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал всё до десятого урока" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

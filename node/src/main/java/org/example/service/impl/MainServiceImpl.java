@@ -3,8 +3,11 @@ package org.example.service.impl;
 import lombok.extern.log4j.Log4j;
 import org.example.dao.AppUserDAO;
 import org.example.dao.RawDataDAO;
+import org.example.entity.AppDocument;
 import org.example.entity.AppUser;
 import org.example.entity.RawData;
+import org.example.exception.UploadFileException;
+import org.example.service.FileService;
 import org.example.service.MainService;
 import org.example.service.ProducerService;
 import org.example.service.enums.ServiceCommands;
@@ -12,6 +15,8 @@ import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.User;
+
+import java.util.concurrent.ScheduledFuture;
 
 import static org.example.entity.enums.UserState.BASIC_STATE;
 import static org.example.entity.enums.UserState.WAIT_FOR_EMAIL_STATE;
@@ -23,11 +28,14 @@ public class MainServiceImpl implements MainService {
     private final RawDataDAO rawDataDAO;
     private final ProducerService producerService;
     private final AppUserDAO appUserDAO;
+    private final FileService fileService;
 
-    public MainServiceImpl(RawDataDAO rawDataDAO, ProducerService producerService, AppUserDAO appUserDAO) {
+    public MainServiceImpl(RawDataDAO rawDataDAO, ProducerService producerService,
+                           AppUserDAO appUserDAO, FileService fileService) {
         this.rawDataDAO = rawDataDAO;
         this.producerService = producerService;
         this.appUserDAO = appUserDAO;
+        this.fileService = fileService;
     }
 
     @Override
@@ -42,7 +50,7 @@ public class MainServiceImpl implements MainService {
         if (CANCEL.equals(serviceCommand)) {
             output = cancelProcess(appUser);
         } else if(BASIC_STATE.equals(userState)) {
-            output = processServiceCommand(appUser, serviceCommand);
+            output = processServiceCommand(appUser, text);
         } else if(WAIT_FOR_EMAIL_STATE.equals(userState)) {
             //TODO Добавить обрабтку имейлов
         } else {
@@ -63,9 +71,17 @@ public class MainServiceImpl implements MainService {
             return;
         }
 
-        // TODO Добавить сохранение документа
-        var answer = "Документ успешно загружен! Ссылка на скачивание: http://test.ru/get-doc/777";
-        sendAnswer(answer, chatId);
+        try {
+            AppDocument doc = fileService.processDoc(update.getMessage());
+            // TODO Добавить генерацию ссылки дляскачивания документа
+
+            var answer = "Документ успешно загружен! Ссылка на скачивание: http://test.ru/get-doc/777";
+            sendAnswer(answer, chatId);
+        } catch (UploadFileException ex) {
+            log.error(ex);
+            String error = "К сожалению, загрузка не удалась. Повторите попытку позже.";
+            sendAnswer(error, chatId);
+        }
     }
 
     @Override
@@ -104,7 +120,8 @@ public class MainServiceImpl implements MainService {
         producerService.produceAnswer(sendMessage);
     }
 
-    private String processServiceCommand(AppUser appUser, ServiceCommands cmd) {
+    private String processServiceCommand(AppUser appUser, String text) {
+        var cmd = ServiceCommands.fromValue(text);
         if(REGISTRATION.equals(cmd)) {
             // TODO Сделать регистрацию
             return "Временно недоступно";

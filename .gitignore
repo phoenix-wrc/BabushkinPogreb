@@ -36,3 +36,14 @@ build/
 
 ### Mac OS ###
 .DS_Store
+logs/node.log
+logs/node.log.1
+logs/node.log.2
+logs/node.log.3
+logs/node.log.4
+*.log
+*.xml
+*.meta
+node/src/main/resources/application.properties
+node/src/main/resources/application.properties
+.idea/workspace.xml
