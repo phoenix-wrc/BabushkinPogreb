@@ -3,8 +3,6 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 **/resources/application.properties
-node\src\main\resources\application.properties
-dispatcher\src\main\resources\application.properties
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
