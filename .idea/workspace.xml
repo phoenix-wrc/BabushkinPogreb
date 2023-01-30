@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed57ccf0-5ab5-42f9-a1e5-69e4b9c0e0a4" name="Changes" comment="Начинаю урок 11">
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/org/example/RestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/org/example/controller/FileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/org/example/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/org/example/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ed57ccf0-5ab5-42f9-a1e5-69e4b9c0e0a4" name="Changes" comment=" Закончил урок 12, вроде все работает">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/dao/AppPhotoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/dao/AppPhotoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/enums/AppPhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/AppPhoto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/org/example/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/MainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/MainServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +200,7 @@
       <workItem from="1674348840062" duration="2320000" />
       <workItem from="1674351865282" duration="16182000" />
       <workItem from="1674696310475" duration="530000" />
-      <workItem from="1675047024953" duration="12802000" />
+      <workItem from="1675047024953" duration="13550000" />
     </task>
     <task id="LOCAL-00001" summary="Сделал всё до десятого урока">
       <created>1674371447355</created>
@@ -230,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675051533278</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=" Закончил урок 12, вроде все работает">
+      <created>1675062666903</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675062666903</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +243,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Сделал всё до десятого урока" />
     <MESSAGE value="Начинаю урок 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="Начинаю урок 11" />
+    <MESSAGE value=" Закончил урок 12, вроде все работает" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Закончил урок 12, вроде все работает" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
