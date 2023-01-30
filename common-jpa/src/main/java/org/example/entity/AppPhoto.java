@@ -1,4 +1,4 @@
-package org.example.entity.enums;
+package org.example.entity;
 
 import lombok.*;
 import org.example.entity.BinaryContent;
@@ -20,5 +20,5 @@ public class AppPhoto {
     private String telegramFileId;
     @OneToOne
     private BinaryContent binaryContent;
-    private Long fileSize;
+    private Integer fileSize;
 }
