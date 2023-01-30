@@ -2,7 +2,9 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-node/src/main/resources/application.properties
+**/resources/application.properties
+node\src\main\resources\application.properties
+dispatcher\src\main\resources\application.properties
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
@@ -45,6 +47,4 @@ logs/node.log.4
 *.log
 *.xml
 *.meta
-node/src/main/resources/application.properties
-node/src/main/resources/application.properties
 .idea/workspace.xml

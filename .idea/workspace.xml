@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed57ccf0-5ab5-42f9-a1e5-69e4b9c0e0a4" name="Changes" comment=" Закончил урок 12, вроде все работает">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +201,7 @@
       <workItem from="1674348840062" duration="2320000" />
       <workItem from="1674351865282" duration="16182000" />
       <workItem from="1674696310475" duration="530000" />
-      <workItem from="1675047024953" duration="13550000" />
+      <workItem from="1675047024953" duration="14291000" />
     </task>
     <task id="LOCAL-00001" summary="Сделал всё до десятого урока">
       <created>1674371447355</created>
@@ -223,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675062666903</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" Закончил урок 12, вроде все работает">
+      <created>1675063307086</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675063307086</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
