@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed57ccf0-5ab5-42f9-a1e5-69e4b9c0e0a4" name="Changes" comment="Промежуточный">
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/resources/application-exemple.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/resources/application-exemple.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="ed57ccf0-5ab5-42f9-a1e5-69e4b9c0e0a4" name="Changes" comment="Пытаюсь поправить гитИгнор">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/FileServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +36,6 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -66,9 +58,10 @@
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-11",
     "last_directory_selection": "D:/JAVA/BabushkinPogreb/dispatcher/src/main/java/org/example",
-    "last_opened_file_path": "D:/JAVA/BabushkinPogreb/node/src/main/resources",
+    "last_opened_file_path": "D:/JAVA/BabushkinPogreb/rest-service/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,8 +71,8 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "e9c25cfd7c981981ad416dd4fb1f9d22",
+    "settings.editor.selected.configurable": "project.propDebugger",
+    "spring.configuration.checksum": "04966af76263ce42786fb3089b5c983c",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -90,9 +83,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVA\BabushkinPogreb\rest-service\src\main\resources" />
       <recent name="D:\JAVA\BabushkinPogreb\node\src\main\resources" />
       <recent name="D:\JAVA\BabushkinPogreb\dispatcher\src\main\resources" />
-      <recent name="D:\JAVA\BabushkinPogreb\rest-service\src\main\resources" />
       <recent name="D:\JAVA\BabushkinPogreb\rest-service\src\main" />
       <recent name="D:\JAVA\BabushkinPogreb\node\src\main\java\org\example" />
     </key>
@@ -112,20 +105,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RestService">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="BabushkinPogreb" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="BabushkinPogreb" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="DispatcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="dispatcher" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.DispatcherApplication" />
@@ -165,13 +145,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.NodeApplication" />
-        <item itemvalue="Spring Boot.DispatcherApplication" />
-        <item itemvalue="Spring Boot.RestService" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -205,7 +178,9 @@
       <workItem from="1674348840062" duration="2320000" />
       <workItem from="1674351865282" duration="16182000" />
       <workItem from="1674696310475" duration="530000" />
-      <workItem from="1675047024953" duration="15548000" />
+      <workItem from="1675047024953" duration="16405000" />
+      <workItem from="1675319734444" duration="734000" />
+      <workItem from="1675646877268" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="Сделал всё до десятого урока">
       <created>1674371447355</created>
@@ -242,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675064093255</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Пытаюсь поправить гитИгнор">
+      <created>1675068894138</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675068894138</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,14 +246,15 @@
     <MESSAGE value="Начинаю урок 11" />
     <MESSAGE value=" Закончил урок 12, вроде все работает" />
     <MESSAGE value="Промежуточный" />
-    <option name="LAST_COMMIT_MESSAGE" value="Промежуточный" />
+    <MESSAGE value="Пытаюсь поправить гитИгнор" />
+    <option name="LAST_COMMIT_MESSAGE" value="Пытаюсь поправить гитИгнор" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/node/src/main/java/org/example/service/impl/FileServiceImpl.java</url>
-          <line>66</line>
+          <line>68</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
