@@ -1,6 +1,6 @@
 package site.ph0en1x.configuration;
 
-import org.example.utils.CryptoTool;
+import site.ph0en1x.utils.CryptoTool;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

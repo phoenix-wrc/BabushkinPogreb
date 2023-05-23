@@ -7,7 +7,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 
-import static org.example.model.RabbitQueue.ANSWER_MESSAGE;
+import static site.ph0en1x.model.RabbitQueue.ANSWER_MESSAGE;
 
 @Service
 @Log4j

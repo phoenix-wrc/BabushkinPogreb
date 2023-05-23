@@ -1,11 +1,11 @@
 package site.ph0en1x.service.impl;
 
 import lombok.extern.log4j.Log4j;
-import org.example.dao.AppUserDAO;
+import site.ph0en1x.dao.AppUserDAO;
 import site.ph0en1x.dao.RawDataDAO;
-import org.example.entity.AppDocument;
-import org.example.entity.AppPhoto;
-import org.example.entity.AppUser;
+import site.ph0en1x.entity.AppDocument;
+import site.ph0en1x.entity.AppPhoto;
+import site.ph0en1x.entity.AppUser;
 import site.ph0en1x.entity.RawData;
 import site.ph0en1x.exception.UploadFileException;
 import site.ph0en1x.service.FileService;
@@ -18,8 +18,8 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.User;
 
-import static org.example.entity.enums.UserState.BASIC_STATE;
-import static org.example.entity.enums.UserState.WAIT_FOR_EMAIL_STATE;
+import static site.ph0en1x.entity.enums.UserState.BASIC_STATE;
+import static site.ph0en1x.entity.enums.UserState.WAIT_FOR_EMAIL_STATE;
 
 @Service
 @Log4j
