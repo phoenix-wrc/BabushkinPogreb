@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <artifactId>BabushkinPogreb</artifactId>
-        <groupId>org.example</groupId>
+        <groupId>site.ph0en1x</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -10,8 +10,8 @@
     <artifactId>dispatcher</artifactId>
 
     <properties>
-        <maven.compiler.sourse>11</maven.compiler.sourse>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.sourse>17</maven.compiler.sourse>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -25,7 +25,7 @@
             <version>${telegrambot.starter.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.example</groupId>
+            <groupId>site.ph0en1x</groupId>
             <artifactId>common-rabitmq</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
