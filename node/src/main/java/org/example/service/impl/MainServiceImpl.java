@@ -11,13 +11,12 @@ import org.example.exception.UploadFileException;
 import org.example.service.FileService;
 import org.example.service.MainService;
 import org.example.service.ProducerService;
+import org.example.service.enums.LinkType;
 import org.example.service.enums.ServiceCommands;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.User;
-
-import java.util.concurrent.ScheduledFuture;
 
 import static org.example.entity.enums.UserState.BASIC_STATE;
 import static org.example.entity.enums.UserState.WAIT_FOR_EMAIL_STATE;
@@ -74,9 +73,9 @@ public class MainServiceImpl implements MainService {
 
         try {
             AppDocument doc = fileService.processDoc(update.getMessage());
-            // TODO Добавить генерацию ссылки дляскачивания документа
+            String link = fileService.generateLink(doc.getId(), LinkType.GET_DOC);
 
-            var answer = "Документ успешно загружен! Ссылка на скачивание: http://test.ru/get-doc/777";
+            var answer = "Документ успешно загружен! Ссылка на скачивание: " + link;
             sendAnswer(answer, chatId);
         } catch (UploadFileException ex) {
             log.error(ex);
@@ -95,9 +94,9 @@ public class MainServiceImpl implements MainService {
         }
         try {
             AppPhoto  photo = fileService.processPhoto(update.getMessage());
-            // TODO Добавить генерацию ссылки дляскачивания фото
+            String link = fileService.generateLink(photo.getId(), LinkType.GET_PHOTO);
 
-            var answer = "Фото успешно загружен! Ссылка на скачивание: http://test.ru/get-photo/777";
+            var answer = "Фото успешно загружен! Ссылка на скачивание: " + link;
             sendAnswer(answer, chatId);
         } catch (UploadFileException ex) {
             log.error(ex);
