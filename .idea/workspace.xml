@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbc62071-3253-4b11-b1d7-2c065e1c06d4" name="Changes" comment="забыл залить контроллер">
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/site/ph0en1x/service/AppUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/site/ph0en1x/service/impl/AppUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/site/ph0en1x/controller/ActivationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/site/ph0en1x/service/UserActivationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/site/ph0en1x/service/impl/UserActivationServiceImpl.java" afterDir="false" />
+    <list default="true" id="cbc62071-3253-4b11-b1d7-2c065e1c06d4" name="Changes" comment="Поправили реализацию пересылки файлов, сделали без сохранений в оперативки ненужных сущностей.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/site/ph0en1x/controller/WebHookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/site/ph0en1x/dao/AppUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/site/ph0en1x/dao/AppUserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mail-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/controller/MailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/controller/MailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/dto/MailParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-utils/src/main/java/dto/MailParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/service/MailSenderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/service/MailSenderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/service/impl/MailSenderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/service/impl/MailSenderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/node/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/site/ph0en1x/service/impl/MainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/site/ph0en1x/service/impl/MainServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-service/src/main/java/site/ph0en1x/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-service/src/main/java/site/ph0en1x/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/site/ph0en1x/controller/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/site/ph0en1x/controller/TelegramBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/site/ph0en1x/controller/UpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/site/ph0en1x/controller/UpdateProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/site/ph0en1x/service/impl/AnswerConsumerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/site/ph0en1x/service/impl/AnswerConsumerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-service/src/main/java/site/ph0en1x/controller/ActivationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-service/src/main/java/site/ph0en1x/controller/ActivationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +81,7 @@
       <recent name="D:\JAVA\BabushkinPogreb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MailApplication">
+  <component name="RunManager" selected="Application.DispatcherApplication">
     <configuration name="DispatcherApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="site.ph0en1x.DispatcherApplication" />
       <module name="dispatcher" />
@@ -144,10 +136,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MailApplication" />
         <item itemvalue="Application.DispatcherApplication" />
-        <item itemvalue="Application.RestService" />
+        <item itemvalue="Application.MailApplication" />
         <item itemvalue="Application.NodeApplication" />
+        <item itemvalue="Application.RestService" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684894216433</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Поправили реализацию пересылки файлов, сделали без сохранений в оперативки ненужных сущностей.">
+      <created>1685421853636</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685421853637</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +207,8 @@
     <MESSAGE value="вроде всё по фен шую лежит, все модули внутри основного проекта, и сайт новый в качестве примера, и вроде уровень языка не слетает" />
     <MESSAGE value="сделали отправку писем на почту для регистрации" />
     <MESSAGE value="забыл залить контроллер" />
-    <option name="LAST_COMMIT_MESSAGE" value="забыл залить контроллер" />
+    <MESSAGE value="Поправили реализацию пересылки файлов, сделали без сохранений в оперативки ненужных сущностей." />
+    <option name="LAST_COMMIT_MESSAGE" value="Поправили реализацию пересылки файлов, сделали без сохранений в оперативки ненужных сущностей." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
