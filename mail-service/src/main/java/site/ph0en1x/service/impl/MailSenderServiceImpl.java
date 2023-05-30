@@ -1,10 +1,10 @@
 package site.ph0en1x.service.impl;
 
+import dto.MailParams;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
-import site.ph0en1x.dto.MailParams;
 import site.ph0en1x.service.MailSenderService;
 
 @Service

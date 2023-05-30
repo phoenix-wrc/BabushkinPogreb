@@ -1,11 +1,11 @@
 package site.ph0en1x.controller;
 
+import dto.MailParams;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import site.ph0en1x.dto.MailParams;
 import site.ph0en1x.service.MailSenderService;
 
 @RequestMapping("/mail")

@@ -4,17 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbc62071-3253-4b11-b1d7-2c065e1c06d4" name="Changes" comment="сделали отправку писем на почту для регистрации">
-      <change afterPath="$PROJECT_DIR$/mail-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/MailApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/dto/MailParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/service/MailSenderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/service/impl/MailSenderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mail-service/src/main/resources/application-example.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="cbc62071-3253-4b11-b1d7-2c065e1c06d4" name="Changes" comment="забыл залить контроллер">
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/site/ph0en1x/service/AppUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/site/ph0en1x/service/impl/AppUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/site/ph0en1x/controller/ActivationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/site/ph0en1x/service/UserActivationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/site/ph0en1x/service/impl/UserActivationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/site/ph0en1x/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/site/ph0en1x/dao/AppUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/site/ph0en1x/dao/AppUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mail-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/controller/MailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/controller/MailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/dto/MailParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-utils/src/main/java/dto/MailParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/service/MailSenderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/service/MailSenderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/service/impl/MailSenderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mail-service/src/main/java/site/ph0en1x/service/impl/MailSenderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/node/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/site/ph0en1x/service/impl/MainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/site/ph0en1x/service/impl/MainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-service/src/main/java/site/ph0en1x/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-service/src/main/java/site/ph0en1x/controller/FileController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +29,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Interface" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -44,27 +54,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "D:/JAVA/BabushkinPogreb",
-    "onboarding.tips.debug.path": "D:/JAVA/BabushkinPogreb/mail-service/src/main/java/site/ph0en1x/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15625",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JAVA/BabushkinPogreb&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/JAVA/BabushkinPogreb/mail-service/src/main/java/site/ph0en1x/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15625&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;9aab95a97899ad65a0a6837b0b5e7fe7&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JSON",
-      "IntegrationPerformanceTest",
-      "PLAIN_TEXT"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;,
+      &quot;IntegrationPerformanceTest&quot;,
+      &quot;PLAIN_TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="site.ph0en1x.service.impl" />
@@ -133,8 +146,8 @@
       <list>
         <item itemvalue="Application.MailApplication" />
         <item itemvalue="Application.DispatcherApplication" />
-        <item itemvalue="Application.NodeApplication" />
         <item itemvalue="Application.RestService" />
+        <item itemvalue="Application.NodeApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -146,6 +159,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684817667468</updated>
+      <workItem from="1684908991850" duration="59000" />
+      <workItem from="1684988887558" duration="190000" />
     </task>
     <task id="LOCAL-00001" summary="пересоздал проект, возможно решит пару броблем не создав слишком мноо новых((((">
       <created>1684818644509</created>
@@ -175,14 +190,25 @@
       <option name="project" value="LOCAL" />
       <updated>1684894048645</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="забыл залить контроллер">
+      <created>1684894216433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684894216433</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="пересоздал проект, возможно решит пару броблем не создав слишком мноо новых((((" />
     <MESSAGE value="вроде всё по фен шую лежит, все модули внутри основного проекта, и сайт новый в качестве примера, и вроде уровень языка не слетает" />
     <MESSAGE value="сделали отправку писем на почту для регистрации" />
-    <option name="LAST_COMMIT_MESSAGE" value="сделали отправку писем на почту для регистрации" />
+    <MESSAGE value="забыл залить контроллер" />
+    <option name="LAST_COMMIT_MESSAGE" value="забыл залить контроллер" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

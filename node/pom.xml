@@ -42,6 +42,11 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
+            <groupId>site.ph0en1x</groupId>
+            <artifactId>common-jpa</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
@@ -56,9 +61,9 @@
             <version>2.2.2</version>
         </dependency>
         <dependency>
-            <groupId>site.ph0en1x</groupId>
-            <artifactId>common-jpa</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4</version>
         </dependency>
     </dependencies>
 </project>
